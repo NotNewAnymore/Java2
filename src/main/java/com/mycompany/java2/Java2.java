@@ -4,6 +4,8 @@
 
 package com.mycompany.java2;
 
+import static com.mycompany.java2.Dog.EarType.Floppy;
+
 /**
  *
  * @author Not_New_Anymore
@@ -11,6 +13,11 @@ package com.mycompany.java2;
 public class Java2 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Animal guy = new Animal(7,"Spider","Black",true);
+    guy.Run();
+    
+    Dog dog1 = new Dog(true, Floppy, 4, "Dogwin", "Dark Cyan", true);
+    dog1.Run();
     }
 }
+
